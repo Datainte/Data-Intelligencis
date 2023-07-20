@@ -509,54 +509,58 @@ p {
 
 
 
-/* affichage pour tous les types d'écran */
-
-/* Ajoutez ces règles pour la taille d'écran par défaut */
+/* Affichage pour tous les types d'écran */
 .container {
   width: 100%;
-  max-width: 1200px; /* Définissez une largeur maximale pour le contenu */
-  margin: 0 auto; /* Centre le contenu horizontalement */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Media Query pour les écrans de taille moyenne, comme les tablettes */
 @media (max-width: 768px) {
   header {
-    padding: 0.5rem 0; /* Réduire l'espace vertical de l'en-tête */
+    padding: 0.5rem 0;
   }
 
   .site-title {
-    font-size: 24px; /* Réduire la taille du titre du site pour les écrans plus petits */
+    font-size: 24px;
   }
 
   nav ul li {
-    margin-right: 10px; /* Réduire l'espace entre les éléments de la barre de navigation */
+    margin-right: 10px;
   }
 
   .footer-content {
-    flex-direction: column; /* Affiche les éléments du pied de page en colonne pour les écrans plus petits */
+    flex-direction: column;
     align-items: center;
   }
 
   .partner-info {
-    flex-direction: column; /* Affiche les informations du partenaire en colonne pour les écrans plus petits */
+    flex-direction: column;
     align-items: center;
   }
   
   .partner-info img {
-    margin-right: 0; /* Supprimer la marge à droite de l'image du partenaire */
-    margin-bottom: 20px; /* Ajouter un espacement sous l'image */
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .tool img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .tool {
+    margin: 10px;
   }
 }
 
 /* Media Query pour les écrans de petite taille, comme les téléphones */
 @media (max-width: 480px) {
   header h1 {
-    font-size: 20px; /* Réduire davantage la taille du titre du site pour les petits écrans */
+    font-size: 20px;
   }
-}
 
-/* Media Query pour les écrans de petite taille, comme les téléphones */
-@media (max-width: 480px) {
   header {
     font-size: 1rem;
     padding: 0.5rem 0;
@@ -570,10 +574,12 @@ p {
     font-size: 14px;
     margin-top: 10px;
   }
-}
 
-/* Media Query pour les écrans de petite taille, comme les téléphones */
-@media (max-width: 480px) {
+  footer {
+    font-size: 14px;
+    padding: 10px;
+  }
+
   .tool img {
     max-width: 100%;
     height: auto;
@@ -581,90 +587,5 @@ p {
 
   .tool {
     margin: 10px;
-  }
-}
-
-/* Media Query pour les écrans de petite taille, comme les téléphones */
-@media (max-width: 480px) {
-  footer {
-    font-size: 14px;
-    padding: 10px;
-  }
-}
-
-/* Media Query pour les écrans de taille moyenne, comme les tablettes */
-@media (max-width: 768px) {
-  header {
-    height: auto; /* Ajuster la hauteur automatiquement pour s'adapter au contenu */
-    padding: 1rem 0; /* Réduire l'espace vertical de l'en-tête */
-  }
-
-  .site-title {
-    font-size: 24px; /* Réduire la taille du titre du site pour les écrans plus petits */
-  }
-
-  nav ul li {
-    margin-right: 10px; /* Réduire l'espace entre les éléments de la barre de navigation */
-  }
-}
-
-/* Media Query pour les écrans de petite taille, comme les téléphones */
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 20px; /* Réduire davantage la taille du titre du site pour les petits écrans */
-  }
-}
-
-/* Media Query pour les écrans de petite taille, comme les téléphones */
-@media (max-width: 480px) {
-  footer {
-    font-size: 14px;
-    padding: 10px;
-  }
-}
-
-/* Media Query pour les écrans de petite taille, comme les téléphones */
-@media (max-width: 480px) {
-  .tool img {
-    max-width: 100%; /* Ajuster la largeur de l'image pour s'adapter à l'écran */
-    height: auto;
-  }
-
-  .tool {
-    margin: 10px;
-  }
-}
-
-
-/* Media Query pour les écrans de taille moyenne, comme les tablettes */
-@media (max-width: 768px) {
-  header {
-    height: auto;
-    padding: 1rem 0;
-  }
-
-  .site-title {
-    font-size: 24px;
-  }
-
-  nav ul li {
-    margin-right: 10px;
-  }
-}
-
-/* Media Query pour les écrans de petite taille, comme les téléphones */
-@media (max-width: 480px) {
-  header {
-    height: auto;
-    padding: 1rem 0;
-  }
-
-  .site-title {
-    font-size: 20px;
-  }
-
-  nav ul li a {
-    font-size: 14px;
-    margin-top: 10px;
   }
 }
