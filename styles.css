@@ -1,8 +1,356 @@
-.offer {
-  display: inline-block;
-  width: calc(33.33% - 10px);
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
+
+/* En-tête */
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: black;
+    width: 100%;
+    height: 150px; /* Ajustez la hauteur selon vos besoins */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem 0 5rem;
+    font-size: 1.25rem;
+  }
+
+
+  .site-title {
+    color: white;
+    font-size: 30px; /* Ajustez la taille du texte selon vos besoins */
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center; /* Centre verticalement les éléments */
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px; /* Ajoute une distance de 20px depuis le haut de la page */
+  }
+  
+  .company-name {
+    color: white;
+    font-size: 20px;
+    margin-top: 0; /* Ajuste le margin-top à 0 pour aligner avec les pages */
+  }
+  
+  
+  
+  /* ajout dynamisme en-tête */ 
+
+  @import url('https://www.zemeilleur.com/wp-content/uploads/2021/05/Analyse-des-donnees.png');
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh; */
+  position: relative;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-flex;
+}
+
+a {
+  position: relative;
+  padding: 1rem 0 0.5rem;
+  margin: 0 1.5rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: transform 250ms;
+  }
+
+  &:hover {
+    &::after {
+      transform: translateX(-50%) scaleX(1);
+    }
+  }
+}
+
+header h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* pied de page */ 
+ 
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .company-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .company-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  /* .linkedin-icon img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  } */ 
+  
+  .footer-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    /* background-image: url("lien_vers_l_image_du_pictogramme_linkedin");*/ 
+    background-size: cover;
+    margin-right: 10px;
+  }
+
+  .email, .phone {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  
+  .content {
+    flex: 1;
+  }
+  
+  footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    /* position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; positionne le pied de page sur toute la fenêtre */
+  }
+
+  /* corps du texte, positionnement du texte sur une image */ 
+
+  section {
+    position: relative;
+    /* margin-bottom: 0px; /* Ajustez en fonction de la hauteur de votre pied de page */
+  }
+  .section-content {
+    position: relative;
+  }
+   
+  .image-overlay img {
+    
+    width: 100%;
+    height: auto;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .text-overlay h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+
+  /* corps du texte texte sur fond blanc centré */ 
+  .data-analytics-section {
+    /*background-image: url('background-image.jpg');*/
+    background-size: cover;
+    background-position: center;
+    /*background-repeat: no-repeat;*/
+    padding: 50px;
+    text-align: center;
+    color: black;
+    position: relative; 
+    z-index: 1;
+    /*margin-bottom: 0;*/
+  }
+  
+  .section-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .section-description {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1DB954;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #e600009c;
+  }
+  
+  .last-section {
+    padding-bottom: 0px; 
+  }
+  
+  /* section outil page accueil*/ 
+  .tools-section {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .tools-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tool {
+    margin: 20px;
+  }
+  
+  .tool img {
+    max-width: 250px;
+    height: auto;
+  }
+  
+
+  /* section témoignage*/ 
+  .testimonials-section {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .testimonial {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .testimonial p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-author {
+    font-weight: bold;
+  }
+  
+  /* paramètre note de page */
+  .small-text {
+    font-size: 14px; 
+  }
+    
+/* Nouvelle section Partenaire */
+  .partner-section {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .partner-info {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .partner-info h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .partner-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  .partner-info img {
+    margin-right: 100px;
+  }
+  .partner-description {
+    flex: 1;
+  }
+
+  .partner-link {
+    color: black; /* Définit la couleur du lien en noir */
+    text-decoration: none; /* Supprime le soulignement du lien */
+    font-weight: bold; /* Met en gras le texte du lien */
 }
