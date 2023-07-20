@@ -1,49 +1,49 @@
 
 /* En-tête */
 body, html {
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: black;
-  width: 100%;
-  padding: 0.5rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  font-size: 1rem;
-}
-
-.site-title {
-  color: white;
-  font-size: 4vw; /* Utilisez une unité de taille relative pour le titre du site */
-  font-weight: bold;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  align-items: center; /* Centre verticalement les éléments */
-}
-
-nav ul li {
-  margin-right: 2vw; /* Utilisez une unité de taille relative pour l'espacement entre les éléments */
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-family: "Arial", sans-serif;
-  font-size: 1.5vw; /* Utilisez une unité de taille relative pour la taille des liens */
-  font-weight: bold;
-  margin-top: 2vh; /* Utilisez une unité de taille relative pour l'espacement depuis le haut de la page */
-}
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: black;
+    width: 100%;
+    height: 150px; /* Ajustez la hauteur selon vos besoins */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem 0 5rem;
+    font-size: 1.25rem;
+  }
 
 
+  .site-title {
+    color: white;
+    font-size: 30px; /* Ajustez la taille du texte selon vos besoins */
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center; /* Centre verticalement les éléments */
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px; /* Ajoute une distance de 20px depuis le haut de la page */
+  }
   
   .company-name {
     color: white;
@@ -261,21 +261,22 @@ header img {
   .tools-section {
     background-color: #f0f0f0;
     text-align: center;
-    padding: 50px 0;
+    padding: 5vw 0;
   }
   
   .tools-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
   }
   
   .tool {
-    margin: 20px;
+    flex-basis: 25%;
+    margin: 1.5vw;
   }
   
   .tool img {
-    max-width: 250px;
+    max-width: 100%;
     height: auto;
   }
   
