@@ -599,4 +599,24 @@ p {
     flex-basis: 100%; 
     max-width: none;
   }
+  /* Ajustement pour l'en-tête sur les petits écrans */
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .site-title {
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
+
