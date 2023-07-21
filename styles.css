@@ -261,7 +261,7 @@ header img {
   .tools-section {
     background-color: #f0f0f0;
     text-align: center;
-    padding: 5vw 0;
+    padding: 50px 0;
   }
   
   .tools-container {
@@ -272,7 +272,8 @@ header img {
   
   .tool {
     flex-basis: 25%;
-    margin: 1.5vw;
+    margin: 20px;
+    max-width: 250px;
   }
   
   .tool img {
@@ -367,7 +368,7 @@ header img {
 
 .offer {
   width: 400px;
-  background-color: #f0f0f0;
+  background-color: #f1f1f1;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -552,7 +553,8 @@ p {
   }
 
   .tool {
-    margin: 10px;
+    flex-basis: 45%;
+    max-width: none;
   }
 }
 
@@ -587,6 +589,7 @@ p {
   }
 
   .tool {
-    margin: 10px;
+    flex-basis: 100%; 
+    max-width: none;
   }
 }
