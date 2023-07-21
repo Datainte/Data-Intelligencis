@@ -8,12 +8,12 @@ body, html {
   header {
     background-color: black;
     width: 100%;
-    height: 150px; /* Ajustez la hauteur selon vos besoins */
+    height: 10%; /* Ajustez la hauteur selon vos besoins */
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 0.5rem 0 5rem;
+    padding: 1rem 0 ;
     font-size: 1.25rem;
   }
 
@@ -22,6 +22,7 @@ body, html {
     color: white;
     font-size: 30px; /* Ajustez la taille du texte selon vos besoins */
     font-weight: bold;
+    margin-bottom: 0;
   }
   
   nav ul {
@@ -567,17 +568,30 @@ p {
 
 /* Media Query pour les écrans de petite taille, comme les téléphones */
 @media (max-width: 480px) {
+  /* Ajustements pour l'en-tête */
+  header {
+    height: auto;
+    padding: 0.5rem 0;
+    flex-direction: column;
+  }
+
   header h1 {
     font-size: 20px;
   }
 
-  header {
-    font-size: 1rem;
-    padding: 0.5rem 0;
-  }
-
   .site-title {
     font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 
   nav ul li a {
@@ -585,11 +599,7 @@ p {
     margin-top: 10px;
   }
 
-  footer {
-    font-size: 14px;
-    padding: 10px;
-  }
-
+  /* Ajustement des images d'outils */
   .tool img {
     max-width: 100%;
     height: auto;
@@ -599,24 +609,12 @@ p {
     flex-basis: 100%; 
     max-width: none;
   }
-  /* Ajustement pour l'en-tête sur les petits écrans */
-  header {
-    flex-direction: column;
-    height: auto;
-    padding: 10px 0;
-  }
 
-  .site-title {
-    margin-bottom: 10px;
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
-
-  nav ul li {
-    margin-right: 0;
-    margin-bottom: 10px;
+  /* Ajustements pour le pied de page */
+  footer {
+    font-size: 14px;
+    padding: 10px;
   }
 }
+
 
