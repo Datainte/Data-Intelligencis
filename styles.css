@@ -273,7 +273,7 @@ header img {
   }
   
   .tool {
-    flex: 0 0 250px; 
+    flex: 0 0 250px;
     max-width: 100%;
     display: flex;
     justify-content: center;
