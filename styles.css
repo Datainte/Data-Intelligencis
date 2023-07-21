@@ -268,16 +268,20 @@ header img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
   
   .tool {
-    flex-basis: 25%;
-    margin: 20px;
-    max-width: 250px;
+    flex: 0 0 250px; 
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .tool img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
   }
   
@@ -441,7 +445,7 @@ body {
   padding: 20px;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 100%; 
+  width: 100%;
 }
 
 .contact-section h2 {
@@ -556,6 +560,9 @@ p {
     flex-basis: 45%;
     max-width: none;
   }
+  .tools-container {
+    justify-content: space-between; /* Espacement égal entre les images */
+  }
 }
 
 /* Media Query pour les écrans de petite taille, comme les téléphones */
@@ -589,7 +596,7 @@ p {
   }
 
   .tool {
-    flex-basis: 100%; 
+    flex : 1; 
     max-width: none;
   }
 }
