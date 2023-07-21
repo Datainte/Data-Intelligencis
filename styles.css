@@ -129,52 +129,7 @@ header img {
   margin: 0 auto;
 }
 
-/* pied de page */ 
- 
-  .footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .company-info {
-    display: flex;
-    align-items: center;
-  }
-  
-  .company-name {
-    font-size: 16px;
-    font-weight: bold;
-    margin-right: 10px;
-  }
-  
-  .footer-icon {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-size: cover;
-    margin-right: 10px;
-  }
 
-  .email, .phone {
-    font-size: 14px;
-    margin-right: 10px;
-  }
-  
-  .content {
-    flex: 1;
-  }
-  
-  footer {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    /* position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%; positionne le pied de page sur toute la fenêtre */
-  }
 
   /* corps du texte, positionnement du texte sur une image */ 
 
@@ -487,6 +442,60 @@ p {
 .projet-description p {
   text-align: justify;
 }
+
+
+
+
+
+
+
+
+
+
+/* pied de page */ 
+ 
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+}
+
+.company-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.footer-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.email, .phone {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.content {
+  flex: 1;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+
 
 
 
