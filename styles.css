@@ -515,6 +515,57 @@ footer {
 
 
 
+/* Menu Navigation Styles */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styles pour le menu hamburger */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.menu-toggle .bar {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #333; /* Couleur des barres du menu hamburger */
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+/* Menu principal */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav li {
+  padding: 0 1rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+
+
+
 
 
 
@@ -566,6 +617,26 @@ footer {
   .tools-container {
     justify-content: space-between; /* Espacement égal entre les images */
   }
+
+  /* Styles pour les petits écrans */
+  .nav {
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav li {
+    padding: 1rem 0;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+
+/* Cache le contenu déroulant par défaut */
+.dropdown-content {
+  display: none;
 }
 
 /* Media Query pour les écrans de petite taille, comme les téléphones */
@@ -601,6 +672,17 @@ footer {
     margin-top: 10px;
   }
 
+  
+  
+ 
+  
+  /* Affiche le contenu déroulant pour les écrans dont la largeur est inférieure à 480px */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }  
+  
+  
+  
   /* Ajustement des images d'outils */
   .tool img {
     max-width: 100%;
@@ -611,6 +693,11 @@ footer {
     flex-basis: 100%; 
     max-width: none;
   }
+
+
+
+
+
 
 
   /* ... affichage section ... */
