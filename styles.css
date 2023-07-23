@@ -612,6 +612,18 @@ footer {
     max-width: none;
   }
 
+
+  /* ... affichage section ... */
+  
+  .about-section {
+    flex-direction: column;
+  }
+    
+  .about-item {
+    margin-bottom: 20px;
+    height: auto;
+  }
+
   /* Ajustements pour le pied de page */
   footer {
     font-size: 14px;
