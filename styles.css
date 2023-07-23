@@ -1,91 +1,18 @@
-
-/* En-tête */
+/* Général */
 body, html {
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: black;
-    width: 100%;
-    height: 10%; /* Ajustez la hauteur selon vos besoins */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding: 1rem 0 ;
-    font-size: 1.25rem;
-  }
-
-
-  .site-title {
-    color: white;
-    font-size: 30px; /* Ajustez la taille du texte selon vos besoins */
-    font-weight: bold;
-    margin-bottom: 0;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    align-items: center; /* Centre verticalement les éléments */
-  }
-  
-  nav ul li {
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-family: "Arial", sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 20px; /* Ajoute une distance de 20px depuis le haut de la page */
-  }
-  
-  .company-name {
-    color: white;
-    font-size: 20px;
-    margin-top: 0; /* Ajuste le margin-top à 0 pour aligner avec les pages */
-  }
-  
-  
-  
-  /* ajout dynamisme en-tête */ 
-
-  @import url('https://www.zemeilleur.com/wp-content/uploads/2021/05/Analyse-des-donnees.png');
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
   font-family: 'Saira Extra Condensed', sans-serif;
   letter-spacing: 1px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  /* height: 100vh; */
-  position: relative;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  display: inline-flex;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 a {
@@ -95,6 +22,142 @@ a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+p {
+  margin: 0;
+}
+
+/* En-tête */
+header {
+  background-color: black;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 0 ;
+  font-size: 1.25rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.site-title {
+  color: white;
+  font-size: 30px; /* Ajustez la taille du texte selon vos besoins */
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  align-items: center;
+  /*  list-style: none;
+    margin: 0;
+    padding: 0;*/
+  }
+
+nav ul li {
+  margin-right: 20px;
+  padding: 1rem 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Pied de page */
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+}
+
+.company-name {
+  color: white;
+  font-size: 20px;
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.email, .phone {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+/* ... (continuez avec les autres sections) ... */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+li {
+  display: inline-flex;
+}
 
   &::after {
     content: '';
@@ -116,18 +179,6 @@ a {
   }
 }
 
-header h1 {
-  font-size: 3rem;
-  color: white;
-  margin-bottom: 1rem;
-}
-
-header img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
 
 
 
@@ -370,23 +421,8 @@ h2 {
 }
 
 
-.header {
-  text-align: center;
-  margin: 0; 
-}
 
-body {
-  background-color: #f1f1f1;
 
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Centrer verticalement */
-  height: 100%;
-  margin: 0;
-}
 
 .contact-section {
   background-color: #fff;
@@ -409,9 +445,7 @@ body {
   color: black;
 }
 
-p {
-  margin: 0;
-}
+
 
 
 #projects {
@@ -446,54 +480,17 @@ p {
 
 
 
-
-
-
-
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
 
 
 /* pied de page */ 
- 
-.footer-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.company-info {
-  display: flex;
-  align-items: center;
-}
-
-.company-name {
-  font-size: 16px;
-  font-weight: bold;
-  margin-right: 10px;
-}
-
-.footer-icon {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-size: cover;
-  margin-right: 10px;
-}
-
-.email, .phone {
-  font-size: 14px;
-  margin-right: 10px;
-}
-
 .content {
   flex: 1;
 }
 
-footer {
-  background-color: black;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
 
 
 
@@ -518,7 +515,7 @@ footer {
 /* Menu Navigation Styles */
 #navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -539,7 +536,7 @@ footer {
 .menu-toggle .bar {
   width: 2rem;
   height: 0.25rem;
-  background-color: #333; /* Couleur des barres du menu hamburger */
+  background-color: #fff; /* Couleur des barres du menu hamburger */
   border-radius: 10px;
   transition: 0.4s;
 }
@@ -549,6 +546,8 @@ footer {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  align-items: center;
+  margin-left: auto;
 }
 
 .nav li {
@@ -557,7 +556,7 @@ footer {
 
 .nav a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 
@@ -569,12 +568,22 @@ footer {
 
 
 
-/* Affichage pour tous les types d'écran */
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Media Query pour les écrans de taille moyenne, comme les tablettes */
 @media (max-width: 768px) {
@@ -626,10 +635,6 @@ footer {
 
   .nav li {
     padding: 1rem 0;
-  }
-
-  .menu-toggle {
-    display: flex;
   }
 }
 
