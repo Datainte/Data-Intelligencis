@@ -26,6 +26,12 @@
       </ul>
   </nav>
   </header>
+  <script>
+    document.getElementById('mobile-menu').onclick = function() {
+      let nav = document.querySelector('.nav');
+      nav.style.display = nav.style.display === 'none' ? 'block' : 'none';
+    };
+  </script>
 
   <section>
     <div class="section-content">
